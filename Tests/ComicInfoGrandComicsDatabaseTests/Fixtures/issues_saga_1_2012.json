@@ -1,0 +1,37 @@
+{
+  "count": 3,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "api_url": "https://www.comics.org/api/issue/946634/?format=json",
+      "series_name": "Batman Saga (2012 series)",
+      "descriptor": "1",
+      "publication_date": "Mai 2012",
+      "price": "5,60 EUR",
+      "page_count": "100.000",
+      "variant_of": null,
+      "series": "https://www.comics.org/api/series/65815/?format=json"
+    },
+    {
+      "api_url": "https://www.comics.org/api/issue/911609/?format=json",
+      "series_name": "Saga (2012 series)",
+      "descriptor": "1 [1st Printing]",
+      "publication_date": "March 2012",
+      "price": "2.99 USD",
+      "page_count": "52.000",
+      "variant_of": null,
+      "series": "https://www.comics.org/api/series/63051/?format=json"
+    },
+    {
+      "api_url": "https://www.comics.org/api/issue/1015888/?format=json",
+      "series_name": "Saga (2012 series)",
+      "descriptor": "1",
+      "publication_date": "October 2012",
+      "price": "9.99 USD",
+      "page_count": "172.000",
+      "variant_of": null,
+      "series": "https://www.comics.org/api/series/69146/?format=json"
+    }
+  ]
+}
