@@ -49,7 +49,9 @@ public struct GrandComicsDatabase: ComicInfo.MetadataSource {
   }
 
   public func issue(for match: ComicInfo.Match) async throws -> ComicInfo.Issue {
-    ComicInfo.Issue()
+    guard let id = Int(match.id) else { throw GrandComicsDatabaseError.invalidIssueID(match.id) }
+    let found = try await client.issue(id)
+    return IssueMapping(issue: found, id: id).issue
   }
 
   /// The series' name without the GCD's " (2012 series)" suffix.

@@ -25,6 +25,11 @@ struct Client: Sendable {
     return page.results
   }
 
+  /// One issue, stories and all.
+  func issue(_ id: Int) async throws -> Responses.Issue {
+    try await get(["issue", String(id)])
+  }
+
   /// Calls one API resource, its path in `segments`, and decodes it.
   private func get<Resource: Decodable>(_ segments: [String]) async throws -> Resource {
     let escaped = segments.map { $0.addingPercentEncoding(withAllowedCharacters: Self.pathSegmentAllowed) ?? $0 }
